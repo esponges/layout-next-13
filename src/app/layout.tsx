@@ -1,4 +1,4 @@
-import CommonLayout from '@/layouts/common'
+import CommonLayout from '@/components/layouts/common'
 import './globals.css'
 
 export const metadata = {

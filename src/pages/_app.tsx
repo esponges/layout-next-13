@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import CommonLayout from '@/layouts/common';
+import CommonLayout from '@/components/layouts/common';
 
 // add requireAuth to AppProps
 type AppPropsWithAuth = AppProps & {
