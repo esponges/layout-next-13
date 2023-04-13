@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import CommonLayout from '@/components/layouts/common';
 import { useEffect, useState } from 'react';
+import '../app/globals.css';
 
 // add requireAuth to AppProps
 type AppPropsWithAuth = AppProps & {

@@ -11,7 +11,7 @@ export default function CommonLayout({
     <html lang='en'>
       {/* some navbar */}
       <head />
-      <body className='some-className'>
+      <body className='p-10'>
         <nav className='navbar'>
           <ul>
             <li>
