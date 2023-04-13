@@ -1,6 +1,4 @@
-'use client';
-
-import Link from 'next/link';
+import Navbar from "./navbar";
 
 export default function CommonLayout({
   children,
@@ -12,16 +10,7 @@ export default function CommonLayout({
       {/* some navbar */}
       <head />
       <body className='p-10'>
-        <nav className='navbar'>
-          <ul>
-            <li>
-              <Link href='/'>Home</Link>
-            </li>
-            <li>
-              <Link href='/faq'>FAQ</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         {children}
       </body>
     </html>

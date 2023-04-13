@@ -3,17 +3,10 @@ import CommonLayout from '@/components/layouts/common';
 import { useEffect, useState } from 'react';
 import '../app/globals.css';
 
-// add requireAuth to AppProps
-type AppPropsWithAuth = AppProps & {
-  Component: {
-    requireAuth?: boolean;
-  };
-};
-
-// _app.tsx
-export default function App({ Component, pageProps }: AppPropsWithAuth) {
+export default function App({ Component, pageProps }: AppProps) {
   const [isMounted, setIsMounted] = useState(false);
 
+  // fix hydration error
   useEffect(() => {
     setIsMounted(true);
   }, []);
