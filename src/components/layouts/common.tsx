@@ -1,26 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 export default function CommonLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  // const [isMounted, setIsMounted] = useState(false);
-
-  // useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
-
-  // if (!isMounted) {
-  //   return null;
-  // }
-
   return (
     <html lang='en'>
       {/* some navbar */}
+      <head />
       <body className='some-className'>
         <nav className='navbar'>
           <ul>
